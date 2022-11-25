@@ -5,38 +5,17 @@
     <title>benderick</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/B.css" />
-    <script src="js/common.js"></script>
-    <script>
-      loadData("md.json", "all", "list", importPassageList);
-      function hi() {
-        document.getElementById("list").style.display = "none";
-        document.getElementById("list").style.width = 0;
-        document.getElementById("passage").style.width = "100%";
-      }
-
-      function no() {
-        document.getElementById("passage").style.width = "85%";
-        document.getElementById("list").style.width = "15%";
-        document.getElementById("list").style.display = "block";
-      }
-    </script>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><span>Bits</span><a href="B.html">B</a></li>
-          <li><span>Atoms</span><a href="A.html">A</a></li>
-          <li><span>Me</span><a href="index.html">I</a></li>
-          <li><span>Neurons</span><a href="N.html">N</a></li>
-          <li>
-            <span>Genes</span><a href="G.html">G</a>
-            
-          </li>
+          <li><span id="side">Bits</span><a href="B.html">B</a></li>
+          <li><span id="sibar">Atoms</span><a href="A.html">A</a></li>
+          <li><span id="mode">Me</span><a href="index.html">I</a></li>
+          <li><span id="sibar">Neurons</span><a href="N.html">N</a></li>
+          <li><span id="sibar">Genes</span><a href="G.html">G</a></li>
         </ul>
-        <div id="cat">
-          <img src="images/cat.svg" alt="cat" />
-        </div>
       </nav>
     </header>
 
@@ -44,17 +23,16 @@
       <section id="list"></section>
       <section id="passage">
         <article id="article">
-          <h1>不知道</h1>
           <p>
-            sdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsdfjfdsklfdsk
-          </p>
-          <p>dskjfdkskfds</p>
-          <p>
-            你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好你好，我很好
+            <img src="images/code.png" alt="code" />
           </p>
         </article>
       </section>
     </main>
+    <script src="js/common.js"></script>
+    <script>
+      loadData("md.json", "all", "list", importPassageList);
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="js/B.js"></script>
     <footer>202209070258 张硕</footer>

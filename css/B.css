@@ -1,16 +1,13 @@
-#cat img {
-  width: 3em;
-  height: 3em;
+#cat {
+  float: right;
 }
 
-#cat {
-  position: absolute;
-  top: 2%;
-  left: 22.5%;
+#cat img{
+  display: block;
 }
 
 main section article {
-  font: 1.2em Azeret Mono, 微软雅黑;
+  font: 1.1em Azeret Mono, 微软雅黑;
 }
 
 @media screen and (max-width: 1000px) {
@@ -26,6 +23,7 @@ main section article {
 main section h1 {
   text-align: center;
   margin: 1.3em 0;
+  font-size: 1.2em;
 }
 
 main section h2,
@@ -48,7 +46,7 @@ section div ul {
   box-sizing: border-box;
   text-align: center;
   padding: 0 0em;
-  font: 1em 宋体;
+  font: 1.1em Azeret Mono, 微软雅黑;
   display: none;
   border-left: 5px solid grey;
 }
@@ -78,3 +76,4 @@ section article table td {
 section article ul {
   margin-left: 2em;
 }
+

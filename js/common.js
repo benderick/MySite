@@ -24,7 +24,7 @@ function sectionWidth() {
   // 根据main种section元素个数，设置相应宽度
   let el_main = document.querySelector("main");
 
-  let list = ["100.","15.85", "35.30.35"]
+  let list = ["100.","15.85", "30.40.30"]
 
   for (let i = 0; i < el_main.childElementCount; i++) {
     el_main.children[i].style.width = list[el_main.childElementCount-1].split('.')[i] + "%";
@@ -93,3 +93,15 @@ function importPassageList(data, part, ele_id){
     section.appendChild(div);
   });
 }
+
+
+let mode_flag = "light";
+document.getElementById("mode").onclick = function () {
+  if (mode_flag === "light") {
+    document.getElementsByTagName("body")[0].classList.add('dark');
+    mode_flag = "dark";
+  } else {
+    document.getElementsByTagName("body")[0].classList.remove('dark');
+    mode_flag = "light";
+  }
+};

@@ -1,25 +1,32 @@
 {
     "index_en":[
-        { "author":"Douglas Adams", "content": "I am rarely happier than when spending entire day programming my computer to perform automatically a task that it would otherwise take me a good ten seconds to do by hand. "},
+        { "author":"苏轼", "content": "休对故人思故国，且将新火试新茶。诗酒趁年华。"},
         { "author":"David Hilbert", "content": "Wir müssen wissen, wir werden wissen."},
+        { "author":"王尔德", "content": "如果你浪费了自己的年龄，那是挺可悲的。因为你的青春只能持续一点儿时间——很短的一点儿时间。"},
         { "author":"Bertrand Russell", "content": "Three passions, simple but overwhelmingly strong, have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind."},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"}
-       
+        { "author":"王勃", "content": "老当益壮，宁知白首之心；穷且益坚，不坠青云之志。"},
+        { "author":"Marcel Proust", "content": "The true voyage of discovery consists not of going to new places, but of having a new pair of eyes."},
+        { "author":"小平邦彦", "content": "数学与雕塑一样，普通的木头里没有埋着定理。但从外面却看不出里面究竟埋着什么，只好雕刻着看。数学中的雕刻就是一边进行繁复的计算，一边调查文献，决不是简单的。在许多情况下什么结果也没有。因此数学研究非常费时间。可以认为，研究的成败主要取决于运气的好坏。"},
+        { "author":"Albert Einstein", "content": "Any fool can know. The point is to understand."},
+        { "author":"Isaac Asimov", "content": "我不害怕计算机，我害怕没有计算机。"},
+        { "author":"W. Pauli", "content": "It is not even wrong."},
+        { "author":"汪曾祺", "content": "红黄蓝白黑，酸甜苦辣咸。每个人都带着一生的历史，半个月的哀乐，在街上走。"},
+        { "author":"Gary Player", "content": "The more I work and practice, the luckier I seem to get."}
+        
     ],
     "index_zh":[
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"},
-        { "author":"1", "content": "1"}
+        { "author":"Douglas Adams", "content": "I am rarely happier than when spending entire day programming my computer to perform automatically a task that it would otherwise take me a good ten seconds to do by hand. "},
+        { "author":"А.И.Кострикин", "content": "我还有很多事情想告诉你，但是你现在尚不能接受。"},
+        { "author":"The Matrix", "content": "There is no spoon."},
+        { "author":"杨振宁", "content": "在任何前沿的科学研究领域，都有一个永远存在的问题，就是你看不清楚的东西中，哪个是值得你抓住不放，哪个是你不要花太多时间去研究。能够分辨出这一点的本领，爱因斯坦特别厉害。"},
+        { "author":"John von Neumann", "content": "If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is."},
+        { "author":"1", "content": "没有什么比坐在屋子里研究那些乏味的符号和单调的图形更无趣的。"},
+        { "author":"Laurent Gasser", "content": "Computers do not solve problems, they execute solutions"},
+        { "author":"Thomas J. Watson(IBM)", "content": "“我认为全球市场可能需要五台计算机。”"},
+        { "author":"Jan L. A. van de Snepscheut", "content": "In theory, there is no difference between theory and practice. But, in practice, there is."},
+        { "author":"达.芬奇", "content": "把最复杂的变成最简单的，才是最高明的。"},
+        { "author":"why the lucky stiff", "content": "When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create."},
+        { "author":"Dennis Gabor", "content": "预见未来的最好的办法就是把它创造出来。"}
+
     ]
 }
