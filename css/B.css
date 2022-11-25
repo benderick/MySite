@@ -1,18 +1,26 @@
-#cat img{
-    width: 3em;
-    height: 3em;
+#cat img {
+  width: 3em;
+  height: 3em;
 }
-
 
 #cat {
-    position: absolute;
-    top: 2%;
-    left: 22.5%;
+  position: absolute;
+  top: 2%;
+  left: 22.5%;
 }
 
-main section article{
-    font: 1.2em Azeret Mono,微软雅黑;
+main section article {
+  font: 1.2em Azeret Mono, 微软雅黑;
+}
 
+@media screen and (max-width: 1000px) {
+  section div h1 {
+    font-size: 1em;
+  }
+
+  section article ul {
+    font-size: 1em !important;
+  }
 }
 
 main section h1 {
@@ -20,53 +28,53 @@ main section h1 {
   margin: 1.3em 0;
 }
 
-main section h2, h3 {
-    margin: 1em 0;
-  }
+main section h2,
+h3 {
+  margin: 1em 0;
+}
 
-main section p{
-    line-height: 2em;
-    text-indent: 2em;
+main section p {
+  line-height: 2em;
+  text-indent: 2em;
 }
 
 section:first-child {
-    border-right: 2px solid black;
-    min-height: 1000px;
+  border-right: 2px solid black;
+  min-height: 1000px;
 }
 
-section div ul{
-    list-style: none;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 0 0em;
-    font: 1em 宋体;
-    display: none;
-    border-left: 5px solid grey;
+section div ul {
+  list-style: none;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 0em;
+  font: 1em 宋体;
+  display: none;
+  border-left: 5px solid grey;
 }
 
-section ul li{
-    margin: 1em 0;
+section ul li {
+  margin: 1em 0;
 }
 
-section div:hover{
-    cursor: pointer;
+section div:hover {
+  cursor: pointer;
 }
 
 section article {
-    padding: 1em;
+  padding: 1em;
 }
 
-section article table{
-    width: 100%;
-    border: 1px solid blue;
-    border-collapse: collapse;
+section article table {
+  width: 100%;
+  border: 1px solid blue;
+  border-collapse: collapse;
 }
 
-section article table td{
-    border: 1px solid black;
+section article table td {
+  border: 1px solid black;
 }
 
 section article ul {
-    margin-left: 2em;
+  margin-left: 2em;
 }
-
