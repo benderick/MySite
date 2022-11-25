@@ -5,20 +5,38 @@
   padding: 0;
 }
 
+
+.dark{
+  background-color: black !important;
+  color: white !important;
+}
+
 @media screen and (max-width: 1900px) {
   body {
     font: 1.2em Azeret Mono, 黑体;
     background-color: whitesmoke;
   }
+
+  iframe {
+    width: 50vw;
+    height: 28.125vw;
+    margin: 0 10vw;
+  }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   body {
     font: 0.75em 微软雅黑;
   }
 
   header li span {
     display: none;
+  }
+
+  iframe {
+    width: 68vw;
+    height: 38.25vw;
+    margin: 0 1vw;
   }
 }
 
@@ -30,6 +48,11 @@ img {
 }
 
 /* 头栏 */
+
+nav{
+  border: 2px solid black;
+}
+
 header {
   margin-top: 2%;
 }

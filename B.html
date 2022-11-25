@@ -8,6 +8,17 @@
     <script src="js/common.js"></script>
     <script>
       loadData("md.json", "all", "list", importPassageList);
+      function hi() {
+        document.getElementById("list").style.display = "none";
+        document.getElementById("list").style.width = 0;
+        document.getElementById("passage").style.width = "100%";
+      }
+
+      function no() {
+        document.getElementById("passage").style.width = "85%";
+        document.getElementById("list").style.width = "15%";
+        document.getElementById("list").style.display = "block";
+      }
     </script>
   </head>
   <body>
@@ -18,14 +29,20 @@
           <li><span>Atoms</span><a href="A.html">A</a></li>
           <li><span>Me</span><a href="index.html">I</a></li>
           <li><span>Neurons</span><a href="N.html">N</a></li>
-          <li><span>Genes</span><a href="G.html">G</a></li>
+          <li>
+            <span>Genes</span><a href="G.html">G</a>
+            
+          </li>
         </ul>
+        <div id="cat">
+          <img src="images/cat.svg" alt="cat" />
+        </div>
       </nav>
     </header>
+
     <main>
-      <section id="list">
-      </section>
-      <section>
+      <section id="list"></section>
+      <section id="passage">
         <article id="article">
           <h1>不知道</h1>
           <p>

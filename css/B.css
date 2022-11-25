@@ -1,3 +1,15 @@
+#cat img{
+    width: 3em;
+    height: 3em;
+}
+
+
+#cat {
+    position: absolute;
+    top: 2%;
+    left: 22.5%;
+}
+
 main section article{
     font: 1.2em Azeret Mono,微软雅黑;
 
@@ -7,6 +19,10 @@ main section h1 {
   text-align: center;
   margin: 1.3em 0;
 }
+
+main section h2, h3 {
+    margin: 1em 0;
+  }
 
 main section p{
     line-height: 2em;
@@ -38,5 +54,19 @@ section div:hover{
 
 section article {
     padding: 1em;
+}
+
+section article table{
+    width: 100%;
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+section article table td{
+    border: 1px solid black;
+}
+
+section article ul {
+    margin-left: 2em;
 }
 
