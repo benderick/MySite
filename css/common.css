@@ -115,7 +115,7 @@ header li.selected {
   }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
 main {
   font-size: 0.8em;
   border: 5px solid darkcyan;
