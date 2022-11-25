@@ -4,12 +4,46 @@
     <meta charset="UTF-8" />
     <title>benderick</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/common.js"></script>
+    <script>
+      loadData('blockquote.json', 'index_en','quote_en' , importQuote);
+      importJson('blockquote', 'index_zh','quote_zh' , importQuote);
+    </script>
+    <style>
+    </style>
   </head>
   <body>
-    <header></header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <header>
+      <nav>
+        <ul>
+          <li><span>Bits</span><a href="B.html">B</a></li>
+          <li><span>Atoms</span><a href="A.html">A</a></li>
+          <li><span>Me</span><a href="index.html">I</a></li>
+          <li><span>Neurons</span><a href="N.html">N</a></li>
+          <li><span>Genes</span><a href="G.html">G</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="quote_zh"></section>
+      <section>
+        <h1>benderick</h1>
+        <p>
+          <img src="images/1.jpg" alt="照片">
+        </p>
+        <p id="words" style="display: none">I do not know what to say.</p>
+      </section>
+      
+      <section id="quote_en"></section>
+    </main>
+
+    <script>
+      let img = document.querySelector('section p img');
+      let p = document.getElementById('words');
+      img.onmouseover = () => p.style.display = 'block';
+      img.onmouseout = () => p.style.display = 'none';
+    </script>
+    <footer>202209070258 张硕</footer>
   </body>
 </html>

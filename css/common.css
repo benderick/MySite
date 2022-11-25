@@ -1,0 +1,144 @@
+/* 全局 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1900px) {
+  body {
+    font: 1.2em Azeret Mono, 黑体;
+    background-color: whitesmoke;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    font: 0.75em 微软雅黑;
+  }
+
+  header li span {
+    display: none;
+  }
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 头栏 */
+header {
+  margin-top: 2%;
+}
+
+header ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 45%;
+}
+
+header ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header li {
+  float: left;
+  width: 19%;
+  box-sizing: border-box;
+  border: 5px solid darkcyan;
+  margin-right: 1%;
+  padding: 1%;
+  padding-bottom: 0;
+  border-bottom-width: 0;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+
+header a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  text-align: center;
+  margin-bottom: 0.24em;
+}
+
+header li:hover {
+  background: lightblue;
+}
+
+header li.selected {
+  color: lightseagreen !important;
+  background: white;
+  position: relative;
+  top: 5px;
+  font-weight: bold;
+}
+
+/* 主栏 */
+@media screen and (max-width: 1960px) {
+  main {
+    font-size: 0.8em;
+    border: 5px solid darkcyan;
+    border-left-width: 0;
+    border-right-width: 0;
+    margin: 0 8%;
+    min-height: 1000px;
+  }
+  }
+
+
+@media screen and (max-width: 960px) {
+main {
+  font-size: 0.8em;
+  border: 5px solid darkcyan;
+  /* border-left-width: 0; */
+  /* border-right-width: 0; */
+  margin: 0 2%;
+  min-height: 1000px;
+}
+}
+
+main::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+main section {
+  display: none;
+  /* border: 2px solid black; */
+  overflow-wrap: break-word;
+  float: left;
+  box-sizing: border-box;
+  width: 0;
+  padding: 0.5em;
+}
+
+/* 底栏 */
+footer {
+  width: 75%;
+  margin: 2% auto;
+  text-align: center;
+}
+
+/* 动画 */
+
+/* 透明度从0到1 */
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.show {
+  animation: show 2.5s;
+}

@@ -1,0 +1,25 @@
+{
+    "index_en":[
+        { "author":"Douglas Adams", "content": "I am rarely happier than when spending entire day programming my computer to perform automatically a task that it would otherwise take me a good ten seconds to do by hand. "},
+        { "author":"David Hilbert", "content": "Wir müssen wissen, wir werden wissen."},
+        { "author":"Bertrand Russell", "content": "Three passions, simple but overwhelmingly strong, have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind."},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"}
+       
+    ],
+    "index_zh":[
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"},
+        { "author":"1", "content": "1"}
+    ]
+}
