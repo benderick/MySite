@@ -2,6 +2,8 @@ main {
 	min-height: 600px;
 }
 
+
+
 .content {
     margin-top: 6em;
     perspective: 3000px;
@@ -9,7 +11,7 @@ main {
     transform:rotateX(-5deg);
 }
 .swiper {
-	position:relative;
+	/* position:relative; */
 	transform-style:preserve-3d;
 }
 .pic-content {

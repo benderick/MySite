@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>benderick</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      main {
+        min-height: 600px;
+        height: 600px;
+      }
+      main section {
+        padding: 50px;
+      }
+      section > div {
+        font-size: 2em;
+        text-align: center;
+        line-height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><span>Bits</span><a ref="B.html" href="#">B</a></li>
+          <li><span>Atoms</span><a ref="A.html" href="#">A</a></li>
+          <li><span id="mode">Me</span><a ref="index.html" href="#">I</a></li>
+          <li><span>Neurons</span><a ref="N.html" href="#">N</a></li>
+          <li><span>Genes</span><a ref="G.html" href="#">G</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div>404 Not Found</div>
+      </section>
+    </main>
+    <script src="js/common.js"></script>
+    <script>
+      let words = [
+        "Wir müssen wissen, wir werden wissen.",
+        "我不害怕计算机，我害怕没有计算机。",
+        "我还有很多事情想告诉你，但是你现在尚不能接受。",
+      ];
+      let num = 0;
+      let div = document.querySelector("section div");
+      div.onmouseover = () => {
+        div.textContent = words[num];
+        num = (num + 1) % words.length;
+      };
+    </script>
+    <footer>202209070258 张硕</footer>
+  </body>
 </html>
