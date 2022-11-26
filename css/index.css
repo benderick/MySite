@@ -5,7 +5,7 @@ main section p, h1 {
 
 main section blockquote {
   /* border: 2px solid black; */
-
+  /* word-wrap:break-word; */
   text-indent: 2em;
   box-sizing: border-box;
   margin: 1.3em 0;

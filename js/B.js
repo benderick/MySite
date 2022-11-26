@@ -4,6 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   stream();
 
+  // 初始化导入侧边栏
+  loadData("md.json", "all", "list", importPassageList);
+
+  passage();
+
+  });
+
+function passage(){
+  // 显示隐藏文章列表，导入Markdown
   let section = document.getElementById("list");
   section.addEventListener("click", function (e) {
     if (e.target.nodeName === "H1") {
@@ -33,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.target.style.color = "#CCCCCC";
     }
   });
-});
+}
 
 // 切换侧边栏
 let side_on_flag = true;
@@ -95,4 +104,30 @@ function stream() {
   }
 
   setInterval(draw, 50);
+}
+
+function importPassageList(data, part, ele_id) {
+  // 导入书籍列表的函数
+  let all = JSON.parse(data)[part];
+  let section = document.getElementById(ele_id);
+  all.forEach((element) => {
+    let div = document.createElement("div");
+
+    let h1 = document.createElement("h1");
+    h1.textContent = element["name"].replace("_", " ").replace("Sharp", "#");
+    div.appendChild(h1);
+
+    let ul = document.createElement("ul");
+    element["passage"].forEach((paslist) => {
+      let li = document.createElement("li");
+      li.textContent = paslist["passage_name"];
+      ul.appendChild(li);
+    });
+    div.appendChild(ul);
+    section.appendChild(div);
+  });
+}
+
+function importMarkdown(data, part, ele_id) {
+  document.getElementById(ele_id).innerHTML = marked.parse(data);
 }

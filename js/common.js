@@ -1,7 +1,9 @@
+navStyle();
+let mode_flag = hrefInfo();
+setMode()
+
 document.addEventListener("DOMContentLoaded", function () {
-  navStyle();
   sectionWidth();
-  setMode()
   modeChange();
   href();
 });
@@ -56,10 +58,6 @@ function loadData(file, part, ele_id, myFun) {
   };
 }
 
-function importMarkdown(data, part, ele_id) {
-  document.getElementById(ele_id).innerHTML = marked.parse(data);
-}
-
 function importQuote(data, part, ele_id) {
   // 导入引用的函数
   let all_quotes = JSON.parse(data)[part];
@@ -74,32 +72,9 @@ function importQuote(data, part, ele_id) {
   });
 }
 
-function importPassageList(data, part, ele_id) {
-  // 导入书籍列表的函数
-  let all = JSON.parse(data)[part];
-  let section = document.getElementById(ele_id);
-  all.forEach((element) => {
-    let div = document.createElement("div");
-
-    let h1 = document.createElement("h1");
-    h1.textContent = element["name"].replace("_", " ").replace("Sharp", "#");
-    div.appendChild(h1);
-
-    let ul = document.createElement("ul");
-    element["passage"].forEach((paslist) => {
-      let li = document.createElement("li");
-      li.textContent = paslist["passage_name"];
-      ul.appendChild(li);
-    });
-    div.appendChild(ul);
-    section.appendChild(div);
-  });
-}
-
-let mode_flag = hrefInfo();
 
 function hrefInfo() {
-  return location.search.includes("light") ? "light" : "dark";
+  return location.search.includes("dark") ? "dark" : "light";
 }
 
 function setMode() {

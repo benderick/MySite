@@ -1,0 +1,28 @@
+main {
+	min-height: 600px;
+}
+
+.content {
+    margin-top: 6em;
+    perspective: 3000px;
+    transform-style:preserve-3d;
+    transform:rotateX(-5deg);
+}
+.swiper {
+	position:relative;
+	transform-style:preserve-3d;
+}
+.pic-content {
+	border:1px #000000 solid;
+	border-radius: 3px;
+    background-color: lightcyan;
+	opacity: .8;
+    box-sizing: border-box;
+    padding: 20px;
+	position:absolute;
+    margin: 0 auto;
+}
+
+.swiper>div:hover{
+	background-color: azure;
+}
