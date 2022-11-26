@@ -1,13 +1,6 @@
-#cat {
-  float: right;
-}
-
-#cat img{
-  display: block;
-}
-
 main section article {
   font: 1.1em Azeret Mono, 微软雅黑;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1000px) {

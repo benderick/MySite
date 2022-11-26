@@ -1,7 +1,10 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   navStyle();
   sectionWidth();
-};
+  setMode()
+  modeChange();
+  href();
+});
 
 function navStyle() {
   // 根据网页，设置导航栏样式
@@ -24,16 +27,17 @@ function sectionWidth() {
   // 根据main种section元素个数，设置相应宽度
   let el_main = document.querySelector("main");
 
-  let list = ["100.","15.85", "30.40.30"]
+  let list = ["100.", "15.85", "30.40.30"];
 
   for (let i = 0; i < el_main.childElementCount; i++) {
-    el_main.children[i].style.width = list[el_main.childElementCount-1].split('.')[i] + "%";
+    el_main.children[i].style.width =
+      list[el_main.childElementCount - 1].split(".")[i] + "%";
     el_main.children[i].classList.add("show");
     el_main.children[i].style.display = "block";
   }
 }
 
-function loadData(file, part,ele_id, myFun) {
+function loadData(file, part, ele_id, myFun) {
   // 根据Json文件名和自定函数，将数据导入相应页面
   var url = "data/" + file;
   // 申明一个XMLHttpRequest
@@ -52,8 +56,7 @@ function loadData(file, part,ele_id, myFun) {
   };
 }
 
-
-function importMarkdown(data, part, ele_id){
+function importMarkdown(data, part, ele_id) {
   document.getElementById(ele_id).innerHTML = marked.parse(data);
 }
 
@@ -71,21 +74,20 @@ function importQuote(data, part, ele_id) {
   });
 }
 
-function importPassageList(data, part, ele_id){
+function importPassageList(data, part, ele_id) {
   // 导入书籍列表的函数
   let all = JSON.parse(data)[part];
   let section = document.getElementById(ele_id);
   all.forEach((element) => {
-
     let div = document.createElement("div");
 
     let h1 = document.createElement("h1");
-    h1.textContent=element["name"].replace("_", " ").replace("Sharp", "#");
+    h1.textContent = element["name"].replace("_", " ").replace("Sharp", "#");
     div.appendChild(h1);
 
-    let ul = document.createElement('ul');
-    element['passage'].forEach((paslist) => {
-      let li = document.createElement('li');
+    let ul = document.createElement("ul");
+    element["passage"].forEach((paslist) => {
+      let li = document.createElement("li");
       li.textContent = paslist["passage_name"];
       ul.appendChild(li);
     });
@@ -94,14 +96,38 @@ function importPassageList(data, part, ele_id){
   });
 }
 
+let mode_flag = hrefInfo();
 
-let mode_flag = "light";
-document.getElementById("mode").onclick = function () {
-  if (mode_flag === "light") {
-    document.getElementsByTagName("body")[0].classList.add('dark');
+function hrefInfo() {
+  return location.search.includes("light") ? "light" : "dark";
+}
+
+function setMode() {
+  // 改变白天黑暗模式
+  if (mode_flag === "dark") {
+    document.getElementsByTagName("body")[0].classList.add("dark");
+    document.querySelector(".selected").style.backgroundColor = "#242429";
     mode_flag = "dark";
   } else {
-    document.getElementsByTagName("body")[0].classList.remove('dark');
+    document.getElementsByTagName("body")[0].classList.remove("dark");
+    document.querySelector(".selected").style.backgroundColor = "whitesmoke";
     mode_flag = "light";
   }
-};
+}
+
+function modeChange() {
+  // 点击改变白黑模式
+  document.getElementById("mode").onclick = function () {
+    mode_flag = mode_flag == "dark" ? "light" : "dark";
+    setMode();
+  };
+}
+
+function href() {
+  let a = document.querySelectorAll("nav a");
+  a.forEach((emement) => {
+    emement.onclick = function () {
+      location.href = emement.getAttribute("ref") + "?" + mode_flag;
+    };
+  });
+}
