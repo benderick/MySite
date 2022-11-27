@@ -1,3 +1,5 @@
+sectionWidth();
+
 document.addEventListener("DOMContentLoaded", function () {
   let content = document.getElementById("content");
   content.classList.remove('show');

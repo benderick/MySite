@@ -1,3 +1,5 @@
+sectionWidth("20.80");
+
 // 侧边栏点击显示隐藏列表项，导入列表项内容
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("side").click();

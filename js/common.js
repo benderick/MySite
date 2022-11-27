@@ -3,7 +3,7 @@ let mode_flag = hrefInfo();
 setMode()
 
 document.addEventListener("DOMContentLoaded", function () {
-  sectionWidth();
+  // sectionWidth();
   modeChange();
   href();
 });
@@ -25,15 +25,13 @@ function navStyle() {
   ul.children[num].classList.add("selected");
 }
 
-function sectionWidth() {
+function sectionWidth(w="100.") {
   // 根据main种section元素个数，设置相应宽度
   let el_main = document.querySelector("main");
 
-  let list = ["100.", "15.85", "30.40.30"];
-
   for (let i = 0; i < el_main.childElementCount; i++) {
     el_main.children[i].style.width =
-      list[el_main.childElementCount - 1].split(".")[i] + "%";
+      w.split(".")[i] + "%";
     el_main.children[i].classList.add("show");
     el_main.children[i].style.display = "block";
   }
