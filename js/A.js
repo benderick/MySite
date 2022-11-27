@@ -2,7 +2,7 @@ sectionWidth();
 
 document.addEventListener("DOMContentLoaded", function () {
   let content = document.getElementById("content");
-  content.classList.remove('show');
+  content.classList.remove("show");
   loadData("msg.json", "all", "swiper", importMsg);
   swiper_circle();
 });

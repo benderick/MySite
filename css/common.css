@@ -5,9 +5,8 @@
   padding: 0;
 }
 
-
-.dark{
-  background-color:#242429 !important;
+.dark {
+  background-color: #242429 !important;
   color: #999999 !important;
 }
 
@@ -109,18 +108,17 @@ header li.selected {
     margin: 0 8%;
     min-height: 1000px;
   }
-  }
-
+}
 
 @media screen and (max-width: 1000px) {
-main {
-  font-size: 0.8em;
-  border: 5px solid darkcyan;
-  /* border-left-width: 0; */
-  /* border-right-width: 0; */
-  margin: 0 2%;
-  min-height: 1000px;
-}
+  main {
+    font-size: 0.8em;
+    border: 5px solid darkcyan;
+    /* border-left-width: 0; */
+    /* border-right-width: 0; */
+    margin: 0 2%;
+    min-height: 1000px;
+  }
 }
 
 main::after {

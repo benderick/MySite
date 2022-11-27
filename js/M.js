@@ -45,7 +45,7 @@ const sketch1 = (p) => {
     p.textSize(fontsize1);
     p.fill(0);
     p.text(tname, 30 + 8 * (5 - tname.length), 300); //左框
-    
+
     p.textSize(fontsize2);
     let per_row = 15;
     let rows = Math.ceil(tcontent.length / per_row);
@@ -80,7 +80,7 @@ const sketch2 = (p) => {
     p.background(0, 102, 153);
     p.image(img2, img2.width / 2, img2.height / 2);
     p.fill("#A5A5A5");
-    
+
     let per_row = 1;
     let words = "欢迎" + tname;
     let rows = Math.ceil(words.length / per_row);

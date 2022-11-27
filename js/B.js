@@ -10,10 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
   loadData("md.json", "all", "list", importPassageList);
 
   passage();
+});
 
-  });
-
-function passage(){
+function passage() {
   // 显示隐藏文章列表，导入Markdown
   let section = document.getElementById("list");
   section.addEventListener("click", function (e) {

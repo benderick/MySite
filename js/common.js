@@ -1,6 +1,6 @@
 navStyle();
 let mode_flag = hrefInfo();
-setMode()
+setMode();
 
 document.addEventListener("DOMContentLoaded", function () {
   // sectionWidth();
@@ -25,13 +25,12 @@ function navStyle() {
   ul.children[num].classList.add("selected");
 }
 
-function sectionWidth(w="100.") {
+function sectionWidth(w = "100.") {
   // 根据main种section元素个数，设置相应宽度
   let el_main = document.querySelector("main");
 
   for (let i = 0; i < el_main.childElementCount; i++) {
-    el_main.children[i].style.width =
-      w.split(".")[i] + "%";
+    el_main.children[i].style.width = w.split(".")[i] + "%";
     el_main.children[i].classList.add("show");
     el_main.children[i].style.display = "block";
   }
@@ -70,7 +69,6 @@ function importQuote(data, part, ele_id) {
   });
 }
 
-
 function hrefInfo() {
   return location.search.includes("dark") ? "dark" : "light";
 }
@@ -80,10 +78,16 @@ function setMode() {
   if (mode_flag === "dark") {
     document.getElementsByTagName("body")[0].classList.add("dark");
     document.querySelector(".selected").style.backgroundColor = "#242429";
+    document.querySelectorAll("img").forEach((element) => {
+      element.style.filter = "brightness(50%)";
+    });
     mode_flag = "dark";
   } else {
     document.getElementsByTagName("body")[0].classList.remove("dark");
     document.querySelector(".selected").style.backgroundColor = "whitesmoke";
+    document.querySelectorAll("img").forEach((element) => {
+      element.style.filter = "";
+    });
     mode_flag = "light";
   }
 }
